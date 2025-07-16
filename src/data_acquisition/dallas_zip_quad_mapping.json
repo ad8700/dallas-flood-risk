@@ -1,0 +1,69 @@
+{
+  "zip_code_mapping": {
+    "75287": {
+      "name": "North Dallas",
+      "coordinates": {
+        "lat": 33.0005,
+        "lon": -96.8314
+      },
+      "quad_ids": [
+        "3209601",
+        "3209701",
+        "3309601", 
+        "3309701"
+      ],
+      "verified": false,
+      "notes": "Example quads - needs verification via USGS EarthExplorer"
+    },
+    "75001": {
+      "name": "Addison",
+      "coordinates": {
+        "lat": 32.9612,
+        "lon": -96.8372
+      },
+      "quad_ids": [],
+      "verified": false
+    },
+    "75201": {
+      "name": "Downtown Dallas",
+      "coordinates": {
+        "lat": 32.7831,
+        "lon": -96.8067
+      },
+      "quad_ids": [],
+      "verified": false
+    },
+    "75202": {
+      "name": "Downtown Dallas",
+      "coordinates": {
+        "lat": 32.7806,
+        "lon": -96.7970
+      },
+      "quad_ids": [],
+      "verified": false
+    },
+    "75203": {
+      "name": "South Dallas",
+      "coordinates": {
+        "lat": 32.7487,
+        "lon": -96.7919
+      },
+      "quad_ids": [],
+      "verified": false
+    },
+    "75204": {
+      "name": "Uptown Dallas",
+      "coordinates": {
+        "lat": 32.8029,
+        "lon": -96.7828
+      },
+      "quad_ids": [],
+      "verified": false
+    }
+  },
+  "utm_zone": "14N",
+  "state": "TX",
+  "naip_years": [2020, 2022, 2024],
+  "resolution": "60cm",
+  "notes": "USGS quad IDs must be verified using EarthExplorer before production use"
+}
