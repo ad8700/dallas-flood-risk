@@ -163,14 +163,14 @@ class NAIPDownloader:
         logger.info(f"Using {len(quad_ids)} quad IDs: {quad_ids}")
         
         # Get years from config or use defaults
-        years = self.zip_config.get('naip_years', [2020, 2022, 2024]) if self.zip_config else [2020, 2022, 2024]
+        years = self.zip_config.get('naip_years', [2020, 2022]) if self.zip_config else [2020, 2022]
         
         tiles = []
         for year in years:
             for quad_id in quad_ids:
                 # NAIP naming convention
                 for quadrant in ['nw', 'ne', 'sw', 'se']:
-                    tile_name = f'm_{quad_id}_{quadrant}_14_060_{year}0815.tif'
+                    tile_name = f'm_{quad_id}_{quadrant}_14_060_{year}0704.tif'
                     s3_path = f's3://naip-analytic/tx/{year}/60cm/rgbir_cog/{quad_id[:5]}/{tile_name}'
                     tiles.append({
                         'year': year,
