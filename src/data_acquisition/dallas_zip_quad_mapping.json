@@ -27,8 +27,8 @@
         "3309624",
         "3309625"
       ],
-      "verified": false,
-      "notes": "Example quads - needs verification via USGS EarthExplorer"
+      "verified": true,
+      "notes": "Verified quad IDs from NAIP S3 bucket"
     },
     "75001": {
       "name": "Addison",

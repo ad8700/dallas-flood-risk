@@ -137,6 +137,7 @@ class NAIPDownloader:
         # First try to use configured mapping
         if self.zip_config and zip_code in self.zip_config['zip_code_mapping']:
             zip_info = self.zip_config['zip_code_mapping'][zip_code]
+            logger.info(f"Found zip info: {zip_info}")
             
             if zip_info.get('quad_ids') and zip_info['verified']:
                 logger.info(f"Using verified quad IDs for {zip_info['name']}")
@@ -163,8 +164,8 @@ class NAIPDownloader:
         logger.info(f"Using {len(quad_ids)} quad IDs: {quad_ids}")
         
         # Get years from config or use defaults
-        years = self.zip_config.get('naip_years', [2020, 2022]) if self.zip_config else [2020, 2022]
-        
+        #years = self.zip_config.get('naip_years', [2020, 2022]) if self.zip_config else [2020, 2022]
+        years = [2022]
         tiles = []
         for year in years:
             for quad_id in quad_ids:
